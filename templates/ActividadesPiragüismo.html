@@ -1,0 +1,50 @@
+{% extends "index.html" %}
+{% block head %}
+    {{super()}}
+<style type="text/css"></style>
+<link type="text/css" rel="stylesheet" href="../static/css/Actividades.css">
+{% endblock %}
+{% block content %}
+<section class="Seccion-Principal-Piraguismo">
+    <div class="Imagen-Principal-Piraguismo">
+        <!--
+        <img src="/static/img/TiendasNoche.jpg" class="Img-Principal" alt="CampingInicio" class="Camping-Inicio">
+        -->
+        <div data-aos="fade-up" data-aos-time="3000" class="Container-Texto-Bungalows">
+            <h1 style="color: white; font-size: 50px; font-family: 'Quicksand', cursive;">Piragüismo</h1>
+        </div>
+    </div>
+</section>
+<section class="Seccion-Informacion">
+    <div class="Informacion-Senderismo" data-aos="fade-down" data-aos-time="2500">
+        <div class="Container-Senderismo-Texto" data-aos="fade-up">
+            <h2 class="Senderismo-Texto-Info">¡Navega bajo el Sol!</h2>
+        </div>
+        <div class="Info-Texto-Senderismo">
+            <p>Bajando el valle pasaremos por zonas de calma, para los más aventureros al final encontraremos zonas de Rafting.</p>
+        </div>
+        <div class="Div-Tabla-Precios-Senderismo">
+            <table class="Tabla-Senderismo">
+                <tr>
+                    <th>Tipo</th>
+                    <th>Duración</th>
+                    <th>Precio</th>
+                </tr>
+                <tr>
+                    <td>Media Ruta</td>
+                    <td>2h</td>
+                    <td>15Eur/Persona</td>
+                </tr>
+                <tr>
+                    <td>Ruta Completa</td>
+                    <td>3h</td>
+                    <td>25Eur/Persona</td>
+                </tr>               
+            </table>
+        </div>
+        <div class="Container-Button-Senderismo">
+            <a class="Button-Reserva-Ofertas" href="/Reservas">Reservar Actividades</a>
+        </div>
+    </div>  
+</section>
+{% endblock %}

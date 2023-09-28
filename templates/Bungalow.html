@@ -1,0 +1,99 @@
+{% extends "index.html" %}
+{% block head %}
+    {{super()}}
+<style type="text/css"></style>
+<link type="text/css" rel="stylesheet" href="static/css/BungalowCss.css">
+{% endblock %}
+{% block content %}
+<section class="Seccion-Principal-Bungalows">
+    <div class="Imagen-Principal-Bungalows">
+        <!--
+        <img src="/static/img/TiendasNoche.jpg" class="Img-Principal" alt="CampingInicio" class="Camping-Inicio">
+        -->
+        <div data-aos="fade-up" class="Container-Texto-Bungalows">
+            <h1 style="color: white; font-size: 50px; font-family: 'Quicksand', cursive;">Bungalows</h1>
+        </div>
+    </div>
+</section>
+<section class="Seccion-Tipo-Bungalows">
+    <div class="Bungalow-Tipo1" data-aos="fade-down-right" data-aos-duration="1250">
+        <div class="Contenedor-Foto-Bungalow1">
+            <div class="Img1-Bungalow-Tipo1">
+                <img src="../static/img/Bungalows/Bungalow1.jpg" class="Imagen1-BungalowTipo1">
+                <div class="MasImgTipo1">
+                    <div class="IconPlus">
+                        <svg xmlns="http://www.w3.org/2000/svg" onclick="Desplegar()" width="35" height="35" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Texto-Bungalow-Tipo1">
+            <h2 class="CabeceraTipo1">Bungalow-Classic</h2>
+            <p class="TextoTipo1">Descubriras un acogedor Bungalow con una pequeña Terraza</p>
+        </div>
+    </div>
+    
+    <div class="Bungalow-Tipo2" data-aos="fade-down-left" data-aos-duration="1250">
+        <div class="Contenedor-Foto-Bungalow2">
+            <div class="Img1-Bungalow-Tipo2" >
+                <img src="../static/img/Bungalows/Bungalow2.jpg" class="Imagen1-BungalowTipo2">
+                <div class="MasImgTipo2">
+                    <div class="IconPlus">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Texto-Bungalow-Tipo2">
+            <h2 class="CabeceraTipo2">Modern-Bungalow</h2>
+            <p class="TextoTipo2">En esta sección de Bungalows disponemos de una amplio patio privado, además de amplios espacios interiores</p>
+        </div>
+    </div>
+</section>
+<section class="Seccion-Tipo-Bungalows" >
+    <div class="Bungalow-Tipo3" data-aos="fade-up-right" data-aos-duration="1250">
+        <div class="Contenedor-Foto-Bungalow3">
+            <div class="Img1-Bungalow Tipo3">
+                <img src="../static/img/Bungalows/Bungalow3.jpg" class="Imagen1-BungalowTipo3">
+                <div class="MasImgTipo3">
+                    <div class="IconPlus">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Texto-Bungalow-Tipo3">
+            <h2 class="CabeceraTipo3">Bungalow-Family</h2>
+            <p class="TextoTipo3">Además, disponemos de Bungalows Familiares para que se puedan juntar los más peques</p>
+        </div>
+    </div>
+    <div class="Bungalow-Tipo4" data-aos="fade-up-left" data-aos-duration="1250">
+        <div class="Contenedor-Foto-Bungalow4">
+            <div class="Img1-Bungalow Tipo4">
+                <img src="../static/img/Bungalows/Bungalow2.3.jpg" class="Imagen1-BungalowTipo4">
+                <div class="MasImgTipo4">
+                    <div class="IconPlus">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Texto-Bungalow-Tipo4">
+            <h2 class="CabeceraTipo4">Bungalow-Chill</h2>
+            <p class="TextoTipo4">Si quieres disfrutar de un momento de relajación esta es tú opción</p>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,55 @@
+{% extends "index.html" %}
+{% block head %}
+    {{super()}}
+<style type="text/css"></style>
+<link type="text/css" rel="stylesheet" href="static/css/Actividades.css">
+<script src="../static/JS/Ajax.js"></script>
+<script src="../static/JS/Actividades.js"></script>
+
+{% endblock %}
+{% block content %}
+<section class="Seccion-Principal-Actividades">
+    <div class="Imagen-Principal-Acividades">
+        <!--
+        <img src="/static/img/TiendasNoche.jpg" class="Img-Principal" alt="CampingInicio" class="Camping-Inicio">
+        -->
+        <div data-aos="fade-up" data-aos-time="3000" class="Container-Texto-Bungalows">
+            <h1 style="color: white; font-size: 50px; font-family: 'Quicksand', cursive;">Actividades</h1>
+        </div>
+    </div>
+</section>
+<section class="Seccion-Informativa">
+    <div class="Contenedor-Senderismo" data-aos="fade-left" onclick="OpenSenderismo()">
+        <div class="Contenedor-Imagen-Senderismo">
+            <img src="../static/img/Actividades/Senderismo1.png"  class="Imagen-Senderismo">
+        </div>
+        <div class="Contenedor-Texto-Senderismo">
+            <h2 class="Titulo-Senderismo">Senderismo</h2>
+        </div>
+    </div>
+    <div class="Contenedor-Caballo" data-aos="fade-right" onclick="OpenCaballo()">
+        <div class="Contenedor-Texto-Caballo">
+            <h2 class="Titulo-Caballo">Montar a Caballo</h2>
+        </div>
+        <div class="Contenedor-Imagen-Caballo">
+            <img src="../static/img/Actividades/Caballo.png"  class="Imagen-Caballo">
+        </div>
+    </div>
+    <div class="Contenedor-Piragüismo" data-aos="fade-left" onclick="OpenPiragüismo()">
+        <div class="Contenedor-Imagen-Piragüismo">
+            <img src="../static/img/Actividades/Piragüismo.png"  class="Imagen-Piragüismo">
+        </div>
+        <div class="Contenedor-Texto-Piragüismo">
+            <h2 class="Titulo-Senderismo">Piragüismo</h2>
+        </div>
+    </div>
+    <div class="Contenedor-Paintball" data-aos="fade-right" onclick="OpenPaintball()">
+        <div class="Contenedor-Texto-Paintball">
+            <h2 class="Titulo-Caballo">Paintball</h2>
+        </div>
+        <div class="Contenedor-Imagen-Caballo">
+            <img src="../static/img/Actividades/paintball.png"  class="Imagen-Paintball">
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,83 @@
+{% extends "index.html" %}
+{% block head %}
+    {{super()}}
+    <link type="text/css" rel="stylesheet" href="../static/css/Reservas.Css">
+    <meta charset="UTF-8">
+{% endblock %}
+{% block content %}
+<section class="Seccion-LogIn">
+    <div class="Container-LogIn">
+        <div class="Container2-LogIn">
+            <div class="Imagen-LogIn">
+                <a><img src="/static/img/CampingLife.Png" class="Logo" width="175px" height="175px"></a>
+            </div>
+            <div class="SeleccionTipoActividad">
+                <form method=POST action="/ComprobarActividad" style="width: 30%; margin-left: 100px;">
+                    <!--<input list="Actividad" name="Actividad-Elegida" id="Actividad-Elegida" size="25" placeholder="Elija Actividad">-->
+                    <select id ="Actividad" name="Actividad">
+                        <option value="Senderismo">Senderismo</option>
+                        <option value="Montar a Caballo">Montar a Caballo</option>
+                        <option value="Piragüismo">Piragüismo</option>
+                        <option value="Paintball">Paintball</option>
+                    </select>
+                    <div class="SeleccionTipoSubActividad" name="SubActividad-Senderismo">
+                        <div class="SubActividad-Senderismo" name="SubActividad-Senderismo">
+                            <select id="SubSelect-Senderismo" name="SubActividadSenderismo">
+                                <option value="Ruta Valle" name="SubActividad-Senderismo">Ruta Valle</option>
+                                <option value="Ruta Cataratas">Ruta Cataratas</option>
+                                <option value="Excursion">Excursion</option>
+                                <option value="Montaña">Montaña</option>
+                            </select>
+                        </div>
+                        <div class="SubActividad-Caballo">
+                            <select id="SubSelect-Caballo">
+                                <option value="Ruta Valle">Ruta Valle</option>
+                                <option value="Ruta Playa">Ruta Playa</option>
+                                <option value="Ruta Montaña">Ruta Montaña</option>
+                                <option value="Ruta Completa">Ruta Completa</option>
+                            </select>
+                        </div>
+                        <div class="SubActividad-Piragüismo">
+                            <select id="SubSelect-Piragüismo">
+                                <option value="Media Ruta">Media Ruta</option>
+                                <option value="Ruta Completa">Ruta Completa</option>
+                            </select>
+                        </div>
+                        <div class="SubActividad-Paintball">
+                            <select id="SubSelect-Paintball">
+                                <option value="Pack 3 Escenarios">Pack 3 Escenarios</option>
+                                <option value="Pack 5 Escenarios">Pack 5 Escenarios</option>
+                                <option value="Pack Completo">Pack Completo</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="SeleccionNúmeroPersonas">
+                        <input type="number" placeholder="Número de Personas" name="N_Personas" min="0" max="15" id="NPersonas">
+                    </div>
+                    <div class="Calendario">
+                        <input type="date" id="Entrada-Fecha" name="fecha" size="25">
+                        <input type="submit" name="Comprobar" class="Button-MasInfo" value="Comprobar">
+                    </div>
+                </form>
+                <div class="Div-Mensaje">
+                    {% with messages = get_flashed_messages() %}
+                        {% if messages %}
+                            {% for message in messages %}
+                                <span id="Mensaje">{{message}}</span>
+                            {% endfor %}
+                        {% endif %}
+                    {% endwith %}
+                    {% block body %}{% endblock %}
+                </div>  
+                
+            </div>
+            
+            <!--Segundo Div Introduccion de Datos-->
+
+        </div>
+        
+
+
+    </div>
+</section>
+{% endblock %}

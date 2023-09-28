@@ -1,0 +1,80 @@
+{% extends "index.html" %}
+{% block head %}
+    {{super()}}
+    <link type="text/css" rel="stylesheet" href="../static/css/LogIn.Css">
+    <script src ="../static/JS/LogIn.js"></script>
+    <meta charset="UTF-8">
+{% endblock %}
+{% block content %}
+    <section class="Section-LogIn">
+        <div class="Container-LogIn">
+            <div class="Div-Formulario-Inicio">
+                <form method="POST" class="Formulario" action="/InicioSesion">
+                    <span style="color: white; font-size: 20px;">Usuario:</span>
+                    <input type="text" id="Usuario" name="Usuario">
+                    <span style="color: white; font-size: 20px;">Contraseña:</span>
+                    <input type="password" id="password" name="password">
+                    <input type="submit" name="Comprobar" class="Button-MasInfo" value="Acceder" id="Acceder">
+                </form>
+                <div class="Panel-Inferior">
+                    <div class="He-Olvidado">
+                        <a href="#" style="text-decoration: none; color: white; font-size: 20px; ";>He olvidado mi clave</a>
+                    </div>
+                    <div class="Nuevo-Usuario">
+                        <a id="Registrarse" style="text-decoration: none; color: white; font-size: 20px;">Registrarse</a>
+                   </div>   
+                </div>      
+            </div>
+        </div>
+        <div class="Container-SignUp">
+            <div class="Div-Formulario-Registro">
+                <form action="/Registro" method="POST">
+                    <div class="Formulario-SignUp">
+                        <div class="Formulario-Registro-I">
+                            <span style="color: white; font-size: 20px;">DNI:</span>
+                            <br>
+                            <input type="text" id="DNI" name="DNI">
+                            <br>
+                            <span style="color: white; font-size: 20px;">Nombre y Apellidos:</span>
+                            <br>
+                            <input type="text" id="DNI" name="Nombre">
+                            <br>
+                            <span style="color: white; font-size: 20px;">Nombre Usuario:</span>
+                            <br>
+                            <input type="text" id="Usuario" name="Usuario">
+                            <span style="color: white; font-size: 20px;">Teléfono:</span>
+                            <input type="text" id="telefono" name="telefono">
+                            <br>
+                        </div>
+                        <div class="Formulario-Registro-D">
+                            <span style="color: white; font-size: 20px;">Contraseña:</span>
+                            <br>
+                            <input type="password" id="password" name="password">
+                            <br>
+                            <span style="color: white; font-size: 20px;">Repetir Contraseña:</span>
+                            <br>
+                            <input type="password" id="re-password">
+                            <br>
+                            <span style="color: white; font-size: 20px;">Email:</span>
+                            <br>
+                            <input type="email" id="Email" name="Email">
+                            <br>
+                            <span style="color: white; font-size: 20px;">Repetir Email:</span>
+                            <input type="email" id="Email">
+                        </div>
+                    </div>
+                    <div class="TyC">
+                        <input type="checkbox" name="Acepta" value="Acepta"> 
+                        <span style="color: black; font-size: 20px;"> He leido y acepto los Términos y Condiciones</span>
+                    </div>
+                    <div class="Submit">
+                        <input type="button" name="Inicio Sesión" title="Inicio Sesion" value="Inicio Sesión" id="Atras-Inicio">
+                        <input type="submit" name="Registrarse" id="Boton-Registrarse" value="Registrarse">
+                    </div>
+                </form>
+                
+                
+            </div>
+        </div>
+    </section>
+{% endblock %}

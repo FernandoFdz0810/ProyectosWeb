@@ -1,0 +1,55 @@
+{% extends "index.html" %}
+{% block head %}
+    {{super()}}
+<style type="text/css"></style>
+<link type="text/css" rel="stylesheet" href="../static/css/Actividades.css">
+{% endblock %}
+{% block content %}
+<section class="Seccion-Principal-Paintball">
+    <div class="Imagen-Principal-Piraguismo">
+        <!--
+        <img src="/static/img/TiendasNoche.jpg" class="Img-Principal" alt="CampingInicio" class="Camping-Inicio">
+        -->
+        <div data-aos="fade-up" data-aos-time="3000" class="Container-Texto-Bungalows">
+            <h1 style="color: white; font-size: 50px; font-family: 'Quicksand', cursive;">Paintball</h1>
+        </div>
+    </div>
+</section>
+<section class="Seccion-Informacion">
+    <div class="Informacion-Senderismo" data-aos="fade-down" data-aos-time="2500">
+        <div class="Container-Senderismo-Texto" data-aos="fade-up">
+            <h2 class="Senderismo-Texto-Info">¡Tensión y adrenalina hasta el final!</h2>
+        </div>
+        <div class="Info-Texto-Senderismo">
+            <p>En los alrededores del Camping disponemos de distintos escenarios donde jugaréis en equipo</p>
+        </div>
+        <div class="Div-Tabla-Precios-Senderismo">
+            <table class="Tabla-Senderismo">
+                <tr>
+                    <th>Tipo</th>
+                    <th>Duración</th>
+                    <th>Precio</th>
+                </tr>
+                <tr>
+                    <td>Pack 3 escenarios</td>
+                    <td>1h y Media</td>
+                    <td>15Eur/Persona</td>
+                </tr>
+                <tr>
+                    <td>Pack 5 escenarios</td>
+                    <td>2h y Media</td>
+                    <td>20Eur/Persona</td>
+                </tr>
+                <tr>
+                    <td>Pack completo</td>
+                    <td>3h y Media + BBQ</td>
+                    <td>40Eur/Persona</td>
+                </tr>               
+            </table>
+        </div>
+        <div class="Container-Button-Senderismo">
+            <a class="Button-Reserva-Ofertas" href="/Reservas">Reservar Actividades</a>
+        </div>
+    </div>  
+</section>
+{% endblock %}
