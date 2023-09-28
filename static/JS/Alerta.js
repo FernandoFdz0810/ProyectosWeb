@@ -1,0 +1,1 @@
+alert("Número de plazas ya cubiertas")

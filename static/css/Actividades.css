@@ -1,0 +1,228 @@
+.Seccion-Principal-Actividades{
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url("../img/Actividades/Portada.jpg");
+}
+
+.Seccion-Informativa{
+    background-color: #FEFBF3;
+}
+
+.Contenedor-Senderismo{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    transition: 2s;
+}
+
+.Contenedor-Senderismo:hover{
+    background-color: #b3b3b3;
+}
+
+.Contenedor-Caballo{
+    width: 100%;
+    height: 250px;
+    display: flex;
+}
+
+.Contenedor-Caballo:hover{
+    background-color: #b3b3b3;
+}
+
+.Contenedor-Piragüismo{
+    width: 100%;
+    height: 250px;
+    display: flex;
+}
+
+.Contenedor-Piragüismo:hover{
+    background-color: #b3b3b3;
+}
+
+.Contenedor-Paintball{
+    width: 100%;
+    height: 250px;
+    display: flex;
+}
+
+.Contenedor-Paintball:hover{
+    background-color: #b3b3b3;
+}
+
+.Contenedor-Imagen-Senderismo{
+    margin-left: 10%;
+    margin-top: 2.5%;
+}
+
+.Contenedor-Imagen-Caballo{
+    margin-top: 2.5%;
+    padding-left: 7.5%;
+}
+
+.Contenedor-Imagen-Piragüismo{
+    margin-left: 5%;
+    margin-top: 2.5%;
+}
+
+.Imagen-Senderismo{
+    height: 75%;
+}
+
+.Imagen-Caballo{
+    height: 75%;
+}
+
+.Imagen-Piragüismo{
+    height: 75%;
+}
+
+.Imagen-Paintball{
+    height: 75%;
+}
+
+
+.Contenedor-Texto-Senderismo{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+    font-family: 'Quicksand', cursive;
+}
+
+.Contenedor-Texto-Caballo{
+    padding-left: 45%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+    font-family: 'Quicksand', cursive;
+}
+
+.Contenedor-Texto-Piragüismo{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+    font-family: 'Quicksand', cursive;
+}
+
+.Contenedor-Texto-Paintball{
+    padding-left: 55%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+    font-family: 'Quicksand', cursive;
+}
+
+
+
+
+
+
+
+/*Seccion Senderismo*/
+
+.Seccion-Principal-Senderismo{
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url("../img/Actividades/send.jpg");
+}
+
+.Container-Senderismo-Texto{
+    padding-top: 2.5%;
+}
+
+.Senderismo-Texto-Info{
+    font-family: 'OoohBaby';
+    font-size: 50px;
+}
+
+.Informacion-Senderismo{
+    height: 650px;
+    background-color: #FEFBF3;
+    text-align: center;
+}
+
+.Info-Texto-Senderismo{
+    padding-top: 2%;
+    font-family: 'Quicksand', cursive;
+    font-size: 20px;
+}
+
+table, th, td {
+    border:1px solid black;
+}
+
+td{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #D6EEEE;
+}
+
+/*Alinear un div */
+.Div-Tabla-Precios-Senderismo{
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5%;
+    font-family: 'Quicksand', cursive;
+
+}
+
+.Tabla-Senderismo{
+    width: 50%;
+}
+
+
+/*Boton Reserva Senderismo */
+
+.Button-Reserva-Ofertas{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px #999;
+}
+
+.Button-Reserva-Ofertas:active{
+    background-color: #21a323 ;
+    box-shadow: 0 3px 2px #666;
+    transform: translateY(4px);
+}
+
+.Container-Button-Senderismo{
+    padding-top: 5%;
+}
+
+.Seccion-Principal-Caballo{
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url("../img/Actividades/CaballoPortada.jpg");
+}
+
+.Informacion-Caballo{
+    height: 650px;
+    background-color: #FEFBF3;
+    text-align: center;
+}
+
+.Seccion-Principal-Piraguismo{
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url("../img/Actividades/Portada.jpg");
+}
+
+.Seccion-Principal-Paintball{
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url("../img/Actividades/Paintball.jpg");
+}
